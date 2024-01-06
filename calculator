@@ -1,0 +1,77 @@
+-- A = adad aval
+-- b = dastor + / - *
+-- c = adad dovom
+
+
+function calulator(a, b, c, f)
+    local typea = type(tonumber(a))
+    local typec = type(tonumber(c))
+    local typef = type(tonumber(f))
+
+    if typea == "number" and  typec == "number" then
+        if b == "/" then
+        print(a / c)
+        
+        elseif b == "*" then
+        print(a * c)
+        
+        elseif b == "-" then
+        print (a - c)
+        
+        elseif b == "+" then
+        print(a + c)
+        
+        elseif b == "%" then
+        print(a % c)
+
+        elseif b == "^" then
+        print(a ^ c)
+            
+        
+       
+        local f = f + (a % c)
+		local f = f + (a + c)
+		local f = f + (a - c)
+		local f = f + (a * c)
+		local f = f + (a / c)
+        local f = f + (a ^ c)
+        else
+            print("dont write wrong")
+
+
+        end
+
+    else
+        print("pls enter a real number!!")
+
+
+
+
+
+    end
+
+end
+
+
+
+local tekrar = "yes"
+
+
+while tekrar == "yes" do
+print("write first number ")
+a = io.read()
+print("write (* / - + %)")
+dastor = io.read()
+print("write number 2 ")
+b = io.read()
+
+calulator(a, dastor, b)
+
+print("whant do again ?(yes / no)")
+ tekrar = io.read()
+   if tekrar == "no" then
+    print("tnx for using this app")
+   end
+   
+
+end
