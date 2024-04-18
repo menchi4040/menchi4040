@@ -1,1 +1,1 @@
-hello im menchi have good point with my code 😛😉
+runt it with lua and vscode 
